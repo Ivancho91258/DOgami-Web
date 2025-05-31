@@ -1,0 +1,134 @@
+html { /*color de fondo página, textos generales */
+    background: #020024;
+    background: linear-gradient(36deg, rgba(2, 0, 36, 1) 11%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 80%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: black;
+    margin: 0;
+    height: 100%;
+}  
+body { /* Estilos para la vista móvil por defecto */
+    width: 100%;
+    margin: 2rem auto; /* Centra el contenido */
+    align-items: center;
+}
+ .header-container {
+    display: flex;
+    flex-direction: column; /* Apila elementos en móvil */
+    align-items: center;
+    font-size: 16px; /* Tamaño de fuente base para móvil */
+}  
+ .vacio-container {
+    width: 100%;
+    padding: 10px 0;
+}  
+ .titulo-container {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
+}  
+ .titulo-container img { /* Icono del titulo */ 
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}  
+ .botones-login-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-radius: 10px;
+    height: auto;
+}  
+ .botones-sesion-login {
+    margin: 5px;
+    padding: 8px 12px; /* Ajusta padding para móvil */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Ajusta tamaño de fuente para móvil */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    background-color: #0F1359;
+    color: #F2F2F2;
+    text-decoration: none;
+}
+ .botones-sesion-login:hover {
+    background-color: #0468BF;
+}
+ .prototipo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ .prototipo-container img {
+    max-width: 50%;
+    height: auto;
+    margin-left: 4%;
+    margin-top: 2%;
+    display: flex;
+}
+ .texto-descripción-container{
+    flex: 1;
+    text-align: center;
+    color: #F2F2F2;
+    font-size: 18px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+ .descargaboton { /*Boton de descarga*/
+    margin: 5px;
+    padding: 8px 12px; /* Ajusta padding para móvil */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Ajusta tamaño de fuente para móvil */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    background-color: #0F1359;
+    color: #F2F2F2;
+    text-decoration: none;
+}
+ .descargaboton:hover {
+    background-color: #0468BF;
+}
+ .mensaje-final{
+    text-align: center;
+    color: #F2F2F2;
+    font-size: 10px;
+    margin-top: 2%;
+}
+ @media (min-width: 720px) {
+    body {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }  
+    .header-container {
+      flex-direction: row; /* Vuelve a la disposición horizontal */
+      justify-content: space-between; /* Espacia título y botones */
+      align-items: center; /* Alinea verticalmente */
+      font-size: 16px; /* Ajusta tamaño de fuente para escritorio */
+    }  
+    .vacio-container {
+      width: 33%;
+      padding: 10px 20px;
+    }  
+    .titulo-container {
+      margin-bottom: 0; /* Elimina el margen inferior en escritorio */
+      justify-content: center;
+    }  
+    .titulo-container img {
+      width: 50px; /* Ajusta tamaño para escritorio */
+    }  
+    .botones-login-container {
+      padding: 20px;
+      width: 33%;
+      text-align: center;
+    }  
+    .botones-sesion-login {
+      font-size: 16px; /* Ajusta tamaño de fuente para escritorio */
+      padding: 10px 20px;
+      text-align: center;
+    }
+  }
