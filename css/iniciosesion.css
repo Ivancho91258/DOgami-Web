@@ -1,38 +1,34 @@
-html { /*color de fondo página, textos generales */
+html,body { /*color de fondo página, textos generales */
     background: #020024;
     background: linear-gradient(36deg, rgba(2, 0, 36, 1) 11%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 80%);
+    background-size: cover; /* Asegura que el gradient cubra toda el área */
+    background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 17px;
     color: black;
-    margin: 0;
-    height: 100%;
-}
-body { /* Estilos para la vista móvil por defecto */
     width: 100%;
-    margin: 2rem auto; /* Centra el contenido */
-    align-items: center;
-}  
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
  .header-container {
     display: flex;
-    flex-direction: column; /* Apila elementos en móvil */
-    align-items: center;
-    font-size: 16px; /* Tamaño de fuente base para móvil */
-}
- .vacio-container {
-    width: 100%;
-    padding: 10px 0;
-}    
- .titulo-container { /* Titulo superior */
-    margin-bottom: 10px;
+    justify-content: space-between;
+    font-size: 16px;
+    align-items: center; 
+}  
+
+ .titulo-container {
+    width: 33%;
     display: flex;
-    align-items: center;
-    text-align: center;
     color: black;
-}
- .titulo-container img { /* Icono del titulo */    
+    justify-content: center;
+    align-items: center;
+}  
+ .titulo-container img { /* Icono del titulo */ 
     width: 50px;
-    height: auto;
-    margin-right: 10px;
+    height: 68px;
+    margin: 10px;
 }
  .cuadro1-container { /* Cuadro zona de login */
     background-color: #F2F2F2;
@@ -123,28 +119,16 @@ body { /* Estilos para la vista móvil por defecto */
     font-size: 10px;
     margin-top: 10%;
 }
- @media (min-width: 720px) {
-    body {
+@media (max-width: 720px){ /*vista movil*/
+    html,body { /*color de fondo página, textos generales */
+        background: #020024;
+        background: linear-gradient(36deg, rgba(2, 0, 36, 1) 11%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 80%);
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        height: 100%;
         width: 100%;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }  
-     .header-container {
-       flex-direction: row; /* Vuelve a la disposición horizontal */
-       justify-content: space-between; /* Espacia título y botones */
-       align-items: center; /* Alinea verticalmente */
-       font-size: 16px; /* Ajusta tamaño de fuente para escritorio */
-    }  
-     .vacio-container {
-       width: 33%;
-       padding: 10px 20px;
-    }  
-     .titulo-container {
-       margin-bottom: 0; /* Elimina el margen inferior en escritorio */
-       justify-content: center;
-    }  
-     .titulo-container img {
-       width: 50px; /* Ajusta tamaño para escritorio */
-    } 
+        margin: 0;
+        padding: 0;
+    }
+
 }
