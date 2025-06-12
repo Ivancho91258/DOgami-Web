@@ -38,10 +38,10 @@ html,body { /*color de fondo página, textos generales */
     margin-top: 4%;
     border-radius: 10px;
     font-size: 14px;
-    max-width: 25%;
+    max-width: 20%;
     height: auto;
-    margin-left: 37.5%;
-    margin-right: 37.5%;
+    margin-left: 40%;
+    margin-right: 40%;
 }
  .elementos-internos{
     max-width: 400px;

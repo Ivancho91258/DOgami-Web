@@ -266,18 +266,18 @@ html,body { /*color de fondo página, textos generales */
         color: black;
     }
  .loginbotongoogle {
-    display: inline-flex;
-    align-items: center;
-    gap: 5px;
-    background-color: #0F1359;
-    color: #F2F2F2;
-    padding: 2%;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 10px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-    margin-bottom: 10px;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        background-color: #0F1359;
+        color: #F2F2F2;
+        padding: 2%;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 10px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+        margin-bottom: 10px;
     }
     .loginbotongoogle:hover {
         background-color: #0468BF;

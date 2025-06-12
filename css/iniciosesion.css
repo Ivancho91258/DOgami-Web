@@ -39,10 +39,10 @@ html,body { /*color de fondo página, textos generales */
     background-color: #F2F2F2;
     padding: 15px;
     border-radius: 10px;
-    max-width: 25%;
+    max-width: 20%;
     height: auto;
-    margin-left: 37.5%;
-    margin-right: 37.5%;
+    margin-left: 40%;
+    margin-right: 40%;
     margin-top: 2%;
     align-items: center;    
 }
